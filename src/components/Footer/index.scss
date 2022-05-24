@@ -1,0 +1,12 @@
+footer {
+    .redes {
+        display        : flex;
+        gap            : 25px;
+        justify-content: center;
+        align-items    : center;
+    }
+
+    hr {
+        border-color: var(--aprende-light-black);
+    }
+}

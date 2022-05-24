@@ -9,6 +9,7 @@
 .navbar {
   @extend %flex-layout;
   padding: $base-padding * 2 $base-padding * 3;
+  min-height: 70px;
 
   .site-title {
     font-size: $font-size-lg;

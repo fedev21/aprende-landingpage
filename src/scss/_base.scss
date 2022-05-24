@@ -32,6 +32,33 @@ h6 {
     @extend %ft-heading;
 }
 
+h1 {
+    font-size: $font-size-xxl;
+}
+
+h2 {
+    font-size: $font-size-xl;
+    line-height: 30px;
+}
+
+h3 {
+    font-size: $font-size-lg;
+}
+
+h4 {
+    font-size: $font-size-m;
+}
+
+h5 {
+    font-size: $font-size-sm;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
 img {
     max-width: 100%;
 }

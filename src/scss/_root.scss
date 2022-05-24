@@ -8,5 +8,10 @@
     --#{$prefix}#{$color}: #{$value};
   }
 
-  --test: #{$border-radius-m};
+  // Generate font sizes
+  @each $font,
+  $value in $fonts-size {
+    --#{$prefix}#{$font}: #{$value};
+  }
+
 }

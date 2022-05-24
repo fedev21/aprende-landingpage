@@ -5,6 +5,7 @@
 // base & layout
 @import "base";
 @import "root";
+@import "breakpoints";
 
 // colors
 @import "colors";
@@ -20,6 +21,7 @@
 @import "components/grid";
 @import "components/navbar";
 @import "components/button";
+@import "components/hero";
 
 
 // utilities

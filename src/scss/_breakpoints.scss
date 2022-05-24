@@ -1,0 +1,61 @@
+@mixin breakpoint($point, $value: 0) {
+    // @if $point==mobile {
+    //     @media (min-width: 320px) {
+    //         @content;
+    //     }
+    // }
+
+    // @else if $point==mobile-horizontal {
+    //     @media (min-width: 480px) {
+    //         @content;
+    //     }
+    // }
+
+    @if $point==sm {
+        @media (min-width: 480px) {
+            @content;
+        }
+    }
+
+    @else if $point==md {
+        @media (min-width: 768px) {
+            @content;
+        }
+    }
+
+    @else if $point==lg {
+        @media (min-width: 1024px) {
+            @content;
+        }
+    }
+
+    @else if $point==xl {
+        @media (min-width: 1280px) {
+            @content;
+        }
+    }
+
+    @else if $point==xxl {
+        @media (min-width: 1500px) {
+            @content;
+        }
+    }
+
+    @else {
+        @media ($point: $value) {
+            @content;
+        }
+    }
+}
+
+@mixin between-breakpoints($min, $max) {
+    @media (min-width: $min) and (max-width: $max) {
+        @content;
+    }
+}
+
+/** Usage:
+  @include breakpoint(tablet) {}
+  @include breakpoint(min-width, 1192px) {}
+  @include between-breakpoints(0, 1024px) {}
+  **/

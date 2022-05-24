@@ -1,0 +1,31 @@
+@mixin make-container($gutter: $container-padding-x) {
+    --#{$prefix}gutter-x: #{$gutter};
+    --#{$prefix}gutter-y: 0;
+    width               : 100%;
+    padding-right       : calc(var(--#{$prefix}gutter-x) * .5); // stylelint-disable-line function-disallowed-list
+    padding-left        : calc(var(--#{$prefix}gutter-x) * .5); // stylelint-disable-line function-disallowed-list
+    margin-right        : auto;
+    margin-left         : auto;
+}
+
+
+.container,
+.container-fluid {
+    @include make-container();
+}
+
+@each $breakpoint,
+$container-max-width in $container-max-widths {
+    .container-#{$breakpoint} {
+        @extend .container-fluid;
+    }
+
+    @include breakpoint($breakpoint) {
+        .container {
+            max-width: $container-max-width;
+        }
+        .container-#{$breakpoint} {
+            max-width: $container-max-width;
+        }
+    }
+}

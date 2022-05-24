@@ -1,0 +1,11 @@
+.taxonomy-list {
+    justify-content: center;
+    gap            : 15px;
+
+    [class*="btn-"] {
+        border: 1px solid var(--aprende-dark-blue);
+        &:hover {
+            color: var(--aprende-white);
+        }
+    }
+}

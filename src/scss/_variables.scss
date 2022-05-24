@@ -43,7 +43,8 @@ $colors: ("blue": $blue,
   "light-black": $light-black,
   "white": $white,
   "gray": $gray-1,
-  "dark-gray": $gray-6,
+  "dark-6": $gray-6,
+  "dark-gray": $dark-gray,
 ) !default;
 
 // Background colors
@@ -91,10 +92,19 @@ $border-radius-xl  : $base-border-radius * 6;
 
 $base-font-size:1rem;
 $font-size-sm  :$base-font-size * 0.75;
-$font-size-lg  :$base-font-size * 1.5;
-$font-size-xl  :$base-font-size * 2;
-$font-size-xxl :$base-font-size * 3;
+$font-size-m   :$base-font-size;
+$font-size-lg  :$base-font-size * 1.25;
+$font-size-xl  :$base-font-size * 1.5;
+$font-size-xxl :$base-font-size * 1.75;
 
+$fonts-size: ('font-size-sm': $font-size-sm,
+  'font-size-m': $font-size-m,
+  'font-size-lg': $font-size-lg,
+  'font-size-xl': $font-size-xl,
+  'font-size-xxl' : $font-size-xxl);
+
+$grid-gutter-width  : 1.5rem !default;
+$container-padding-x: $grid-gutter-width !default;
 
 // Grid breakpoints
 $grid-breakpoints: (xs: 0,

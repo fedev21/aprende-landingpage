@@ -1,7 +1,8 @@
 /**
  * Internal dependencies
  */
-import { Header, Hero } from '../components'
+import { Header, Hero, Services, Blog, Footer } from '../components'
+import { PostsProvider } from '../context';
 
 function App() {
 
@@ -10,8 +11,12 @@ function App() {
             <Header />
             <Hero />
             <main>
-                content
+                <Services />
+                <PostsProvider>
+                    <Blog />
+                </PostsProvider>
             </main>
+            <Footer />
         </div >
     );
 }

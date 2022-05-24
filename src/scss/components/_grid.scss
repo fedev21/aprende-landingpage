@@ -1,25 +1,29 @@
-$layout-values: flex-start, flex-end, center, space-between, space-around;
+$layout-values: flex-start,
+flex-end,
+center,
+space-between,
+space-around;
 
 // justify content classes
 @each $val in $layout-values {
-  .justify-#{$val} {
-    justify-content: $val;
-  }
+    .justify-#{$val} {
+        justify-content: $val;
+    }
 }
 
 .aprende\:grid {
-    display     : flex;
-    flex-wrap   : wrap;
-    margin-left : calc($gap / -2);
-    margin-right: calc($gap / -2);
+    display        : flex;
+    flex-wrap      : wrap;
+    // margin-left : calc($gap / -2);
+    // margin-right: calc($gap / -2);
 }
 
 [class*="col-"],
 .col {
-    width        : 100%;
-    max-width    : 100%;
-    padding-left : calc($gap / 2);
-    padding-right: calc($gap / 2);
+    // width        : 100%;
+    // max-width    : 100%;
+    // padding-left : calc($gap / 2);
+    // padding-right: calc($gap / 2);
 }
 
 @mixin grid-system($mq) {
@@ -37,10 +41,17 @@ $layout-values: flex-start, flex-end, center, space-between, space-around;
 
 @include grid-system(col);
 
-@media screen and (min-width:578px) {
-    @include grid-system(sm\:col)
+@each $name,
+$width in $grid-breakpoints {
+
+    @include breakpoint($name) {
+        @include grid-system(#{$name}\:col);
+    }
 }
 
-@media screen and (min-width:1024px) {
-    @include grid-system(md\:col)
+
+@include breakpoint(xxl) {
+    .taxonomy-list {
+        padding: 0 100px;
+    }
 }
