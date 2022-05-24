@@ -1,8 +1,0 @@
-@font-face {
-    font-family: 'Collier Book';
-    src: local('Collier Book'), local('Collier-Book'),
-        url('Collier-Book.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
