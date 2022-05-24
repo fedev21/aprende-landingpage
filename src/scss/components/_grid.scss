@@ -1,0 +1,46 @@
+$layout-values: flex-start, flex-end, center, space-between, space-around;
+
+// justify content classes
+@each $val in $layout-values {
+  .justify-#{$val} {
+    justify-content: $val;
+  }
+}
+
+.aprende\:grid {
+    display     : flex;
+    flex-wrap   : wrap;
+    margin-left : calc($gap / -2);
+    margin-right: calc($gap / -2);
+}
+
+[class*="col-"],
+.col {
+    width        : 100%;
+    max-width    : 100%;
+    padding-left : calc($gap / 2);
+    padding-right: calc($gap / 2);
+}
+
+@mixin grid-system($mq) {
+    .#{ $mq } {
+        flex: 1 0 0
+    }
+
+    @for $col from 1 through $cols {
+        .#{ $mq }-#{ $col } {
+            flex     : 0 0 calc(100% / $cols) * $col;
+            max-width: calc(100% / $cols) * $col;
+        }
+    }
+}
+
+@include grid-system(col);
+
+@media screen and (min-width:578px) {
+    @include grid-system(sm\:col)
+}
+
+@media screen and (min-width:1024px) {
+    @include grid-system(md\:col)
+}

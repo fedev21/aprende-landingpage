@@ -1,0 +1,45 @@
+.hero {
+    position      : relative;
+    margin        : 0 auto;
+    padding-bottom: 140px;
+    background    : black;
+
+    .overlay {
+        position: relative;
+
+        img {
+            width    : 100%;
+            max-width: unset;
+        }
+
+        span {
+            width     : 100%;
+            display   : inline-block;
+            position  : absolute;
+            bottom    : 0;
+            box-shadow: black 0 0 10px 25px;
+            z-index   : 1;
+            height    : 0;
+        }
+    }
+
+
+    .content {
+        position  : relative;
+        margin-top: -65px;
+        z-index   : 2;
+        text-align: center;
+
+        .background-heading {
+            line-height: 30px;
+        }
+    }
+
+
+    form {
+        display        : flex;
+        align-items    : center;
+        justify-content: center;
+        flex-direction : column;
+    }
+}

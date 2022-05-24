@@ -1,0 +1,122 @@
+// Prefix for :root CSS variables
+$prefix : aprende- !default;
+
+// Theme color system
+
+$white      : #FFFFFF !default;
+$gray-1     : #D7DFE4 !default;
+$gray-2     : #00000029 !default;
+$gray-3     : #EDEDED !default;
+$gray-4     : #707070 !default;
+$gray-5     : #333333 !default;
+$gray-6     : #231F20 !default;
+$dark-gray  : #98AFBC !default;
+$black      : #000000 !default;
+$light-black: #2E4053 !default;
+
+$grays: ("1": $gray-1,
+  "2": $gray-2,
+  "3": $gray-3,
+  "4": $gray-4,
+  "5": $gray-5,
+  "6": $gray-6,
+  "dark-gray": $dark-gray) !default;
+
+$blue       : #053891 !default;
+$dark-blue  : #111457 !default;
+$blue-pastel: #5256A3 !default;
+$pink-red   : #E3103E !default;
+$cherry     : #E0103C !default;
+$red-cherry : #CD1225 !default;
+$green      : #42A318 !default;
+$yellow     : #FBD023 !default;
+
+$colors: ("blue": $blue,
+  "dark-blue": $dark-blue,
+  "blue-pastel": $blue-pastel,
+  "pink-red": $pink-red,
+  "cherry": $cherry,
+  "red-cherry": $red-cherry,
+  "green": $green,
+  "yellow": $yellow,
+  "black": $black,
+  "light-black": $light-black,
+  "white": $white,
+  "gray": $gray-1,
+  "dark-gray": $gray-6,
+) !default;
+
+// Background colors
+
+$bg-colors: ("black": $black,
+  "dark-blue": $dark-blue,
+  "blue-pastel": $blue-pastel,
+  "pink-red": $pink-red) !default;
+
+// Spacing
+
+$base-padding: 5px !default;
+$padding-sm  : $base-padding * 0.5;
+$padding-m   : $base-padding * 1.5;
+$padding-lg  : $base-padding * 2;
+$padding-xl  : $base-padding * 3;
+$padding-xxl : $base-padding * 4;
+
+$base-margin: 5px !default;
+$margin-sm  : $base-margin * 0.5;
+$margin-m   : $base-margin * 1.5;
+$margin-lg  : $base-margin * 2;
+$margin-xl  : $base-margin * 3;
+$margin-xxl : $base-margin * 4;
+
+$spacer: 1rem !default;
+$spacers: (0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+) !default;
+
+// borders
+$base-border-thickness: 1px !default;
+
+$base-border-radius: 5px !default;
+$border-radius-sm  : $base-border-radius * 0.6;
+$border-radius-m   : $base-border-radius * 1.5;
+$border-radius-lg  : $base-border-radius * 2;
+$border-radius-xl  : $base-border-radius * 6;
+
+// Font sizes
+
+$base-font-size:1rem;
+$font-size-sm  :$base-font-size * 0.75;
+$font-size-lg  :$base-font-size * 1.5;
+$font-size-xl  :$base-font-size * 2;
+$font-size-xxl :$base-font-size * 3;
+
+
+// Grid breakpoints
+$grid-breakpoints: (xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px) !default;
+
+
+// Grid containers
+$container-max-widths: (sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px) !default;
+
+// Grid columns
+$cols : 12;
+$gap  : 16px;
+
+
+// Fonts
+$base-font : 'Source Sans Pro' !default;
+$heading-font : 'Collier' !default;

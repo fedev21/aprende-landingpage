@@ -1,0 +1,55 @@
+%ft {
+    font-style  : normal;
+    font-variant: normal;
+    font-family : $base-font;
+}
+
+%ft-regular {
+    @extend %ft;
+    font-weight: normal;
+}
+
+.ft-regular {
+    @extend %ft-regular;
+}
+
+%ft-bold {
+    @extend %ft;
+    font-weight: 600;
+}
+
+.ft-bold {
+    @extend %ft-bold;
+}
+
+%ft-heading {
+    font-style  : normal;
+    font-variant: normal;
+    font-family : $heading-font;
+    font-weight : normal;
+}
+
+.ft-heading {
+    @extend %ft-heading;
+}
+
+// fontsize
+// 12
+// 14
+// 16
+// 18
+// 21
+// 24
+// 30
+
+
+// lineheight
+// 17
+// 19
+// 20
+// 21
+// 22
+// 29
+// 30
+// 36
+// 54

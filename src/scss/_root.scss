@@ -1,0 +1,12 @@
+:root {
+  // Colors
+  //
+  // Generate palettes for full colors and grays
+
+  @each $color,
+  $value in $colors {
+    --#{$prefix}#{$color}: #{$value};
+  }
+
+  --test: #{$border-radius-m};
+}

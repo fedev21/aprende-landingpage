@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Collier';
+    src: local('Collier Bold Italic'), local('Collier-BoldItalic'),
+        url('Collier-BoldItalic.otf') format('opentype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Collier';
+    src: local('Collier Bold'), local('Collier-Bold'),
+        url('Collier-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Collier';
+    src: local('Collier Black Italic'), local('Collier-BlackItalic'),
+        url('Collier-BlackItalic.otf') format('opentype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Collier Book';
+    src: local('Collier Book'), local('Collier-Book'),
+        url('Collier-Book.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Collier';
+    src: local('Collier Black'), local('Collier-Black'),
+        url('Collier-Black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Collier Book';
+    src: local('Collier Book Italic'), local('Collier-BookItalic'),
+        url('Collier-BookItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
