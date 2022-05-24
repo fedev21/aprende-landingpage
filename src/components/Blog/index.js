@@ -58,7 +58,7 @@ const Blog = () => {
 
     return (
         <div id="blog" className="blog container">
-            <h3 className='text-dark-blue lh-29'>Explora todas nuestras Clases Magistrales</h3>
+            <h3 className='text-dark-blue'>Explora todas nuestras Clases Magistrales</h3>
             <CategoriesFilter categories={categories} selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
             <ul className={`posts-list aprende:grid mb-xxl ${hasMorePosts ? 'has-more-posts' : ''}`}>
                 {filteredPosts.map((post, index) => {

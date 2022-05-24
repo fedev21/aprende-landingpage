@@ -1,0 +1,25 @@
+@include breakpoint(md) {
+    footer {
+        .container {
+            display: flex;
+
+            hr {
+                display: none;
+            }
+
+            .redes {
+                order: 2;
+            }
+
+            .politics {
+                display: flex;
+                flex: 1;
+                margin-right: 25px;
+                align-items: center;
+                div {
+                    margin-left: auto;
+                }
+            }
+        }
+    }
+}

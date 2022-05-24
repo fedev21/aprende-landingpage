@@ -23,7 +23,7 @@ const Hero = () => {
                 <div className="form-box bg-white br-base text-light-black md:col-4">
                     <h3 className='ft-bold text-light-black m-0 mb-m'>Lorem ipsum dolor</h3>
                     <p className='m-0 mb-m'>TextP1 Lorem ipsum dolor consectetur adipiscing elit platea rhoncus</p>
-                    <form>
+                    <form onSubmit={(e) => e.preventDefault()}>
                         <label>
                             <input required type="text" placeholder='Nombre*' name="name" className='text-dark-gray br-base p-lg pr-0 pl-xxl' />
                         </label>

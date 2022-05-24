@@ -1,16 +1,23 @@
-.posts-list {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    gap: 20px;
-
-    &:not(.has-more-posts){
-        padding-bottom: 55px;
+.blog {
+    h3 {
+        line-height: 30px;
+        font-size: 24px;
     }
-}
 
-.ver-mas-btn{
-    &:hover {
-        color: var(--aprende-white);
+    .posts-list {
+        display        : flex;
+        flex-flow      : row wrap;
+        justify-content: center;
+        gap            : 20px;
+
+        &:not(.has-more-posts) {
+            padding-bottom: 55px;
+        }
+    }
+
+    .ver-mas-btn {
+        &:hover {
+            color: var(--aprende-white);
+        }
     }
 }
